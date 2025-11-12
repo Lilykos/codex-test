@@ -1,7 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { v4 as uuidv4 } from 'crypto';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const STORAGE_FILE = path.join(__dirname, '../data/meals.json');

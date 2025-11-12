@@ -1,0 +1,127 @@
+.daily-nutrition-chart {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.daily-nutrition-chart h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-tooltip {
+  background: white;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.custom-tooltip .label {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.custom-tooltip .calories {
+  margin: 0.25rem 0 0 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.custom-tooltip .grams {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.macro-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.stat-color {
+  width: 12px;
+  height: 60px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.stat-color.protein {
+  background: linear-gradient(180deg, #4ecdc4 0%, #44a08d 100%);
+}
+
+.stat-color.carbs {
+  background: linear-gradient(180deg, #ffe66d 0%, #f7b731 100%);
+}
+
+.stat-color.fat {
+  background: linear-gradient(180deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.stat-color.fiber {
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #667eea;
+  margin-bottom: 0.25rem;
+}
+
+.stat-detail {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .macro-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chart-container {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .macro-stats {
+    grid-template-columns: 1fr;
+  }
+}
